@@ -8,23 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		AD2ADDB125B167610066D74B /* Umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD2ADDAF25B167610066D74B /* Umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD2ADDBF25B167730066D74B /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADDBE25B167730066D74B /* Static.swift */; };
-		AD2ADDC625B167AE0066D74B /* Umbrella.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADDC525B167AE0066D74B /* Umbrella.swift */; };
-		AD2ADDCA25B167D50066D74B /* libStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2ADDBC25B167730066D74B /* libStatic.a */; };
+		AD2ADDC625B167AE0066D74B /* export.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADDC525B167AE0066D74B /* export.swift */; };
+		AD2ADDD525B16CE00066D74B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2ADDD425B16CE00066D74B /* RxSwift.framework */; };
+		AD2ADDEA25B172220066D74B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2ADDD425B16CE00066D74B /* RxSwift.framework */; };
+		AD2ADDEC25B1723E0066D74B /* UserDefaultsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADDEB25B1723E0066D74B /* UserDefaultsDataStore.swift */; };
+		AD2ADDF425B172480066D74B /* UserDefaultsDataStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADDF325B172480066D74B /* UserDefaultsDataStoreProtocol.swift */; };
+		AD2ADDF925B172550066D74B /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADDF825B172550066D74B /* UserDefaultsKeys.swift */; };
+		AD2ADDFE25B1726F0066D74B /* UserDefaultsPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADDFD25B1726F0066D74B /* UserDefaultsPropertyWrapper.swift */; };
+		AD2ADE0325B1727B0066D74B /* UserDefaultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADE0225B1727B0066D74B /* UserDefaultsRepository.swift */; };
+		AD2ADE0825B1728A0066D74B /* UserDefaultsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADE0725B1728A0066D74B /* UserDefaultsRepositoryProtocol.swift */; };
+		AD2ADE1825B173860066D74B /* libDataStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2ADDE025B1720C0066D74B /* libDataStore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AD2ADDCB25B167D50066D74B /* PBXContainerItemProxy */ = {
+		AD2ADE1925B173860066D74B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AD2ADDA325B167610066D74B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AD2ADDBB25B167730066D74B;
-			remoteInfo = Static;
+			remoteGlobalIDString = AD2ADDDF25B1720C0066D74B;
+			remoteInfo = DataStore;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AD2ADDBA25B167730066D74B /* CopyFiles */ = {
+		AD2ADDDE25B1720C0066D74B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -39,9 +46,15 @@
 		AD2ADDAC25B167610066D74B /* Umbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Umbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2ADDAF25B167610066D74B /* Umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Umbrella.h; sourceTree = "<group>"; };
 		AD2ADDB025B167610066D74B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD2ADDBC25B167730066D74B /* libStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD2ADDBE25B167730066D74B /* Static.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Static.swift; sourceTree = "<group>"; };
-		AD2ADDC525B167AE0066D74B /* Umbrella.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Umbrella.swift; sourceTree = "<group>"; };
+		AD2ADDC525B167AE0066D74B /* export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = export.swift; sourceTree = "<group>"; };
+		AD2ADDD425B16CE00066D74B /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/Static/RxSwift.framework; sourceTree = "<group>"; };
+		AD2ADDE025B1720C0066D74B /* libDataStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDataStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD2ADDEB25B1723E0066D74B /* UserDefaultsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDataStore.swift; sourceTree = "<group>"; };
+		AD2ADDF325B172480066D74B /* UserDefaultsDataStoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDataStoreProtocol.swift; sourceTree = "<group>"; };
+		AD2ADDF825B172550066D74B /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		AD2ADDFD25B1726F0066D74B /* UserDefaultsPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsPropertyWrapper.swift; sourceTree = "<group>"; };
+		AD2ADE0225B1727B0066D74B /* UserDefaultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRepository.swift; sourceTree = "<group>"; };
+		AD2ADE0725B1728A0066D74B /* UserDefaultsRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRepositoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,14 +62,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD2ADDCA25B167D50066D74B /* libStatic.a in Frameworks */,
+				AD2ADDD525B16CE00066D74B /* RxSwift.framework in Frameworks */,
+				AD2ADE1825B173860066D74B /* libDataStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD2ADDB925B167730066D74B /* Frameworks */ = {
+		AD2ADDDD25B1720C0066D74B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2ADDEA25B172220066D74B /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				AD2ADDAE25B167610066D74B /* Umbrella */,
-				AD2ADDBD25B167730066D74B /* Static */,
+				AD2ADDE125B1720C0066D74B /* DataStore */,
 				AD2ADDAD25B167610066D74B /* Products */,
 				AD2ADDC925B167D50066D74B /* Frameworks */,
 			);
@@ -77,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				AD2ADDAC25B167610066D74B /* Umbrella.framework */,
-				AD2ADDBC25B167730066D74B /* libStatic.a */,
+				AD2ADDE025B1720C0066D74B /* libDataStore.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,24 +102,30 @@
 			children = (
 				AD2ADDAF25B167610066D74B /* Umbrella.h */,
 				AD2ADDB025B167610066D74B /* Info.plist */,
-				AD2ADDC525B167AE0066D74B /* Umbrella.swift */,
+				AD2ADDC525B167AE0066D74B /* export.swift */,
 			);
 			path = Umbrella;
-			sourceTree = "<group>";
-		};
-		AD2ADDBD25B167730066D74B /* Static */ = {
-			isa = PBXGroup;
-			children = (
-				AD2ADDBE25B167730066D74B /* Static.swift */,
-			);
-			path = Static;
 			sourceTree = "<group>";
 		};
 		AD2ADDC925B167D50066D74B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD2ADDD425B16CE00066D74B /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD2ADDE125B1720C0066D74B /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				AD2ADDEB25B1723E0066D74B /* UserDefaultsDataStore.swift */,
+				AD2ADDF325B172480066D74B /* UserDefaultsDataStoreProtocol.swift */,
+				AD2ADDF825B172550066D74B /* UserDefaultsKeys.swift */,
+				AD2ADDFD25B1726F0066D74B /* UserDefaultsPropertyWrapper.swift */,
+				AD2ADE0225B1727B0066D74B /* UserDefaultsRepository.swift */,
+				AD2ADE0725B1728A0066D74B /* UserDefaultsRepositoryProtocol.swift */,
+			);
+			path = DataStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,32 +150,33 @@
 				AD2ADDA825B167610066D74B /* Sources */,
 				AD2ADDA925B167610066D74B /* Frameworks */,
 				AD2ADDAA25B167610066D74B /* Resources */,
+				AD2ADDD825B16CE80066D74B /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AD2ADDCC25B167D50066D74B /* PBXTargetDependency */,
+				AD2ADE1A25B173860066D74B /* PBXTargetDependency */,
 			);
 			name = Umbrella;
 			productName = Umbrella;
 			productReference = AD2ADDAC25B167610066D74B /* Umbrella.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AD2ADDBB25B167730066D74B /* Static */ = {
+		AD2ADDDF25B1720C0066D74B /* DataStore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD2ADDC025B167730066D74B /* Build configuration list for PBXNativeTarget "Static" */;
+			buildConfigurationList = AD2ADDE425B1720C0066D74B /* Build configuration list for PBXNativeTarget "DataStore" */;
 			buildPhases = (
-				AD2ADDB825B167730066D74B /* Sources */,
-				AD2ADDB925B167730066D74B /* Frameworks */,
-				AD2ADDBA25B167730066D74B /* CopyFiles */,
+				AD2ADDDC25B1720C0066D74B /* Sources */,
+				AD2ADDDD25B1720C0066D74B /* Frameworks */,
+				AD2ADDDE25B1720C0066D74B /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Static;
-			productName = Static;
-			productReference = AD2ADDBC25B167730066D74B /* libStatic.a */;
+			name = DataStore;
+			productName = DataStore;
+			productReference = AD2ADDE025B1720C0066D74B /* libDataStore.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +192,7 @@
 						CreatedOnToolsVersion = 12.3;
 						LastSwiftMigration = 1230;
 					};
-					AD2ADDBB25B167730066D74B = {
+					AD2ADDDF25B1720C0066D74B = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -189,7 +211,7 @@
 			projectRoot = "";
 			targets = (
 				AD2ADDAB25B167610066D74B /* Umbrella */,
-				AD2ADDBB25B167730066D74B /* Static */,
+				AD2ADDDF25B1720C0066D74B /* DataStore */,
 			);
 		};
 /* End PBXProject section */
@@ -204,30 +226,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AD2ADDD825B16CE80066D74B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Static/RxSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD2ADDA825B167610066D74B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD2ADDC625B167AE0066D74B /* Umbrella.swift in Sources */,
+				AD2ADDC625B167AE0066D74B /* export.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD2ADDB825B167730066D74B /* Sources */ = {
+		AD2ADDDC25B1720C0066D74B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD2ADDBF25B167730066D74B /* Static.swift in Sources */,
+				AD2ADE0325B1727B0066D74B /* UserDefaultsRepository.swift in Sources */,
+				AD2ADDF925B172550066D74B /* UserDefaultsKeys.swift in Sources */,
+				AD2ADDEC25B1723E0066D74B /* UserDefaultsDataStore.swift in Sources */,
+				AD2ADDFE25B1726F0066D74B /* UserDefaultsPropertyWrapper.swift in Sources */,
+				AD2ADE0825B1728A0066D74B /* UserDefaultsRepositoryProtocol.swift in Sources */,
+				AD2ADDF425B172480066D74B /* UserDefaultsDataStoreProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AD2ADDCC25B167D50066D74B /* PBXTargetDependency */ = {
+		AD2ADE1A25B173860066D74B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD2ADDBB25B167730066D74B /* Static */;
-			targetProxy = AD2ADDCB25B167D50066D74B /* PBXContainerItemProxy */;
+			target = AD2ADDDF25B1720C0066D74B /* DataStore */;
+			targetProxy = AD2ADE1925B173860066D74B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -364,12 +412,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
+				);
 				INFOPLIST_FILE = Umbrella/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = y.ryoga.Umbrella;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -390,12 +446,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
+				);
 				INFOPLIST_FILE = Umbrella/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = y.ryoga.Umbrella;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -405,11 +469,15 @@
 			};
 			name = Release;
 		};
-		AD2ADDC125B167730066D74B /* Debug */ = {
+		AD2ADDE525B1720C0066D74B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CMZ8NMX69N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -418,11 +486,15 @@
 			};
 			name = Debug;
 		};
-		AD2ADDC225B167730066D74B /* Release */ = {
+		AD2ADDE625B1720C0066D74B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CMZ8NMX69N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -452,11 +524,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD2ADDC025B167730066D74B /* Build configuration list for PBXNativeTarget "Static" */ = {
+		AD2ADDE425B1720C0066D74B /* Build configuration list for PBXNativeTarget "DataStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD2ADDC125B167730066D74B /* Debug */,
-				AD2ADDC225B167730066D74B /* Release */,
+				AD2ADDE525B1720C0066D74B /* Debug */,
+				AD2ADDE625B1720C0066D74B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

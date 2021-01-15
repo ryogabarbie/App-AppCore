@@ -12,8 +12,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let hoge = Hoge()
-        print(hoge.sample)
+
+        Observable.just("just")
+            .subscribe(onNext: { string in
+                print(string)
+            })
+            .dispose()
+
+        let repo = UserDefaultsRepository()
+        repo.setSample("haraheri")
+        repo.sample
+            .subscribe({ string in
+                print(string)
+            })
+            .dispose()
     }
 }
 

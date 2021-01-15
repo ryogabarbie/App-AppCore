@@ -13,8 +13,8 @@
 		AD2ADD9525B1673D0066D74B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2ADD9325B1673D0066D74B /* Main.storyboard */; };
 		AD2ADD9725B1673D0066D74B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2ADD9625B1673D0066D74B /* Assets.xcassets */; };
 		AD2ADD9A25B1673D0066D74B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2ADD9825B1673D0066D74B /* LaunchScreen.storyboard */; };
-		AD2ADDD125B169CC0066D74B /* Umbrella.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2ADDD025B169CC0066D74B /* Umbrella.framework */; };
-		AD2ADDD225B169CC0066D74B /* Umbrella.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD2ADDD025B169CC0066D74B /* Umbrella.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD2ADF7B25B664EF0066D74B /* Umbrella.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2ADF7A25B664EF0066D74B /* Umbrella.framework */; };
+		AD2ADF7C25B664EF0066D74B /* Umbrella.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD2ADF7A25B664EF0066D74B /* Umbrella.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AD2ADDD225B169CC0066D74B /* Umbrella.framework in Embed Frameworks */,
+				AD2ADF7C25B664EF0066D74B /* Umbrella.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +40,7 @@
 		AD2ADD9625B1673D0066D74B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD2ADD9925B1673D0066D74B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD2ADD9B25B1673D0066D74B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD2ADDD025B169CC0066D74B /* Umbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Umbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD2ADF7A25B664EF0066D74B /* Umbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Umbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD2ADDD125B169CC0066D74B /* Umbrella.framework in Frameworks */,
+				AD2ADF7B25B664EF0066D74B /* Umbrella.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 		AD2ADDCF25B169CC0066D74B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD2ADDD025B169CC0066D74B /* Umbrella.framework */,
+				AD2ADF7A25B664EF0066D74B /* Umbrella.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
