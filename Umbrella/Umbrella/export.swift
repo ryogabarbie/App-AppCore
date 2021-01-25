@@ -9,3 +9,4 @@ import Foundation
 
 @_exported import RxSwift
 @_exported import DataStore
+@_exported import APIKit
