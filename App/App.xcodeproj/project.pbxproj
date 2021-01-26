@@ -68,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				AD2ADD8C25B1673D0066D74B /* App */,
-				AD2ADD8B25B1673D0066D74B /* Products */,
 				AD2ADDCF25B169CC0066D74B /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +78,7 @@
 				AD2ADD8A25B1673D0066D74B /* App.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		AD2ADD8C25B1673D0066D74B /* App */ = {
@@ -91,6 +91,7 @@
 				AD2ADD9625B1673D0066D74B /* Assets.xcassets */,
 				AD2ADD9825B1673D0066D74B /* LaunchScreen.storyboard */,
 				AD2ADD9B25B1673D0066D74B /* Info.plist */,
+				AD2ADD8B25B1673D0066D74B /* Products */,
 			);
 			path = App;
 			sourceTree = "<group>";
