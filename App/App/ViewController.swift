@@ -10,6 +10,9 @@ import Umbrella
 import Feature1
 import Feature2
 import Feature3
+import Feature4
+import Features5
+import Feature6
 
 class ViewController: UIViewController {
 
@@ -35,6 +38,9 @@ class ViewController: UIViewController {
         Feature1.hoge()
         Feature2.hoge()
         Feature3.hoge()
+        Feature4.hoge()
+        Feature5.hoge()
+        Feature6.hoge()
     }
 }
 

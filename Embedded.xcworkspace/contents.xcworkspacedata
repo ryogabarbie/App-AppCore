@@ -8,6 +8,15 @@
       location = "container:"
       name = "Features">
       <FileRef
+         location = "group:Features/Feature6/Feature6.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Features/Features5/Features5.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Features/Feature4/Feature4.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Features/Feature3/Feature3.xcodeproj">
       </FileRef>
       <FileRef
