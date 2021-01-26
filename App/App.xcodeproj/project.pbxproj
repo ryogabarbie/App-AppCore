@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0D883B25BFEF7100985F78 /* libFeature3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0D883A25BFEF7100985F78 /* libFeature3.a */; };
+		AD0D884625BFF04300985F78 /* libFeature2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0D884525BFF04300985F78 /* libFeature2.a */; };
+		AD0D884825BFF04700985F78 /* libFeature1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0D884725BFF04700985F78 /* libFeature1.a */; };
 		AD2ADD8E25B1673D0066D74B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADD8D25B1673D0066D74B /* AppDelegate.swift */; };
 		AD2ADD9025B1673D0066D74B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADD8F25B1673D0066D74B /* SceneDelegate.swift */; };
 		AD2ADD9225B1673D0066D74B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADD9125B1673D0066D74B /* ViewController.swift */; };
@@ -32,6 +35,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD0D883A25BFEF7100985F78 /* libFeature3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFeature3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0D884525BFF04300985F78 /* libFeature2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFeature2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0D884725BFF04700985F78 /* libFeature1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFeature1.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2ADD8A25B1673D0066D74B /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2ADD8D25B1673D0066D74B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD2ADD8F25B1673D0066D74B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0D884825BFF04700985F78 /* libFeature1.a in Frameworks */,
+				AD0D884625BFF04300985F78 /* libFeature2.a in Frameworks */,
+				AD0D883B25BFEF7100985F78 /* libFeature3.a in Frameworks */,
 				AD2ADF7B25B664EF0066D74B /* Umbrella.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +98,9 @@
 		AD2ADDCF25B169CC0066D74B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD0D884725BFF04700985F78 /* libFeature1.a */,
+				AD0D884525BFF04300985F78 /* libFeature2.a */,
+				AD0D883A25BFEF7100985F78 /* libFeature3.a */,
 				AD2ADF7A25B664EF0066D74B /* Umbrella.framework */,
 			);
 			name = Frameworks;

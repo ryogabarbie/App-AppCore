@@ -4,6 +4,19 @@
    <FileRef
       location = "group:Umbrella/Umbrella.xcodeproj">
    </FileRef>
+   <Group
+      location = "container:"
+      name = "Features">
+      <FileRef
+         location = "group:Features/Feature3/Feature3.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Features/Feature2/Feature2.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Features/Feature1/Feature1.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:App/App.xcodeproj">
    </FileRef>
