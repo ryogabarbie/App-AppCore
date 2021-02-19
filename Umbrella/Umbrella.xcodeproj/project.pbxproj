@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		AD2ADDB125B167610066D74B /* Umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD2ADDAF25B167610066D74B /* Umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD2ADDC625B167AE0066D74B /* export.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADDC525B167AE0066D74B /* export.swift */; };
-		AD2ADDD525B16CE00066D74B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2ADDD425B16CE00066D74B /* RxSwift.framework */; };
-		AD2ADDEA25B172220066D74B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2ADDD425B16CE00066D74B /* RxSwift.framework */; };
 		AD2ADDEC25B1723E0066D74B /* UserDefaultsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADDEB25B1723E0066D74B /* UserDefaultsDataStore.swift */; };
 		AD2ADDF425B172480066D74B /* UserDefaultsDataStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADDF325B172480066D74B /* UserDefaultsDataStoreProtocol.swift */; };
 		AD2ADDF925B172550066D74B /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADDF825B172550066D74B /* UserDefaultsKeys.swift */; };
 		AD2ADDFE25B1726F0066D74B /* UserDefaultsPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADDFD25B1726F0066D74B /* UserDefaultsPropertyWrapper.swift */; };
 		AD2ADE0325B1727B0066D74B /* UserDefaultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADE0225B1727B0066D74B /* UserDefaultsRepository.swift */; };
 		AD2ADE0825B1728A0066D74B /* UserDefaultsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ADE0725B1728A0066D74B /* UserDefaultsRepositoryProtocol.swift */; };
-		AD2ADE1825B173860066D74B /* libDataStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2ADDE025B1720C0066D74B /* libDataStore.a */; };
-		ADBBEA4D25BED3AA00A009C9 /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = ADBBEA4C25BED3AA00A009C9 /* APIKit */; settings = {ATTRIBUTES = (Required, ); }; };
+		ADF57F2525DB58F800E27BAE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF57F2425DB58F800E27BAE /* Data.swift */; };
+		ADF57F5925DB5DE900E27BAE /* libDataStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2ADDE025B1720C0066D74B /* libDataStore.a */; };
+		ADF57F6625DB5E2900E27BAE /* ExportAPIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF57F6525DB5E2900E27BAE /* ExportAPIKit.swift */; };
+		ADF57FA025DB6E3200E27BAE /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = ADF57F9F25DB6E3200E27BAE /* APIKit */; };
+		ADF57FA525DB6E4600E27BAE /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = ADF57FA425DB6E4600E27BAE /* APIKit */; };
+		ADF57FA725DB6E4E00E27BAE /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = ADF57FA625DB6E4E00E27BAE /* APIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADF57F6125DB5E2900E27BAE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +59,6 @@
 		AD2ADDAF25B167610066D74B /* Umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Umbrella.h; sourceTree = "<group>"; };
 		AD2ADDB025B167610066D74B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD2ADDC525B167AE0066D74B /* export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = export.swift; sourceTree = "<group>"; };
-		AD2ADDD425B16CE00066D74B /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/Static/RxSwift.framework; sourceTree = "<group>"; };
 		AD2ADDE025B1720C0066D74B /* libDataStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDataStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2ADDEB25B1723E0066D74B /* UserDefaultsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDataStore.swift; sourceTree = "<group>"; };
 		AD2ADDF325B172480066D74B /* UserDefaultsDataStoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDataStoreProtocol.swift; sourceTree = "<group>"; };
@@ -56,6 +66,9 @@
 		AD2ADDFD25B1726F0066D74B /* UserDefaultsPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsPropertyWrapper.swift; sourceTree = "<group>"; };
 		AD2ADE0225B1727B0066D74B /* UserDefaultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRepository.swift; sourceTree = "<group>"; };
 		AD2ADE0725B1728A0066D74B /* UserDefaultsRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRepositoryProtocol.swift; sourceTree = "<group>"; };
+		ADF57F2425DB58F800E27BAE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		ADF57F6325DB5E2900E27BAE /* libExportAPIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libExportAPIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF57F6525DB5E2900E27BAE /* ExportAPIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportAPIKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD2ADDD525B16CE00066D74B /* RxSwift.framework in Frameworks */,
-				AD2ADE1825B173860066D74B /* libDataStore.a in Frameworks */,
-				ADBBEA4D25BED3AA00A009C9 /* APIKit in Frameworks */,
+				ADF57F5925DB5DE900E27BAE /* libDataStore.a in Frameworks */,
+				ADF57FA725DB6E4E00E27BAE /* APIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +85,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD2ADDEA25B172220066D74B /* RxSwift.framework in Frameworks */,
+				ADF57FA525DB6E4600E27BAE /* APIKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF57F6025DB5E2900E27BAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF57FA025DB6E3200E27BAE /* APIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +105,7 @@
 			children = (
 				AD2ADDAE25B167610066D74B /* Umbrella */,
 				AD2ADDE125B1720C0066D74B /* DataStore */,
+				ADF57F6425DB5E2900E27BAE /* ExportAPIKit */,
 				AD2ADDAD25B167610066D74B /* Products */,
 				AD2ADDC925B167D50066D74B /* Frameworks */,
 			);
@@ -95,6 +116,7 @@
 			children = (
 				AD2ADDAC25B167610066D74B /* Umbrella.framework */,
 				AD2ADDE025B1720C0066D74B /* libDataStore.a */,
+				ADF57F6325DB5E2900E27BAE /* libExportAPIKit.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +134,6 @@
 		AD2ADDC925B167D50066D74B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD2ADDD425B16CE00066D74B /* RxSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,8 +147,17 @@
 				AD2ADDFD25B1726F0066D74B /* UserDefaultsPropertyWrapper.swift */,
 				AD2ADE0225B1727B0066D74B /* UserDefaultsRepository.swift */,
 				AD2ADE0725B1728A0066D74B /* UserDefaultsRepositoryProtocol.swift */,
+				ADF57F2425DB58F800E27BAE /* Data.swift */,
 			);
 			path = DataStore;
+			sourceTree = "<group>";
+		};
+		ADF57F6425DB5E2900E27BAE /* ExportAPIKit */ = {
+			isa = PBXGroup;
+			children = (
+				ADF57F6525DB5E2900E27BAE /* ExportAPIKit.swift */,
+			);
+			path = ExportAPIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +191,7 @@
 			);
 			name = Umbrella;
 			packageProductDependencies = (
-				ADBBEA4C25BED3AA00A009C9 /* APIKit */,
+				ADF57FA625DB6E4E00E27BAE /* APIKit */,
 			);
 			productName = Umbrella;
 			productReference = AD2ADDAC25B167610066D74B /* Umbrella.framework */;
@@ -181,9 +211,31 @@
 			);
 			name = DataStore;
 			packageProductDependencies = (
+				ADF57FA425DB6E4600E27BAE /* APIKit */,
 			);
 			productName = DataStore;
 			productReference = AD2ADDE025B1720C0066D74B /* libDataStore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		ADF57F6225DB5E2900E27BAE /* ExportAPIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF57F6725DB5E2900E27BAE /* Build configuration list for PBXNativeTarget "ExportAPIKit" */;
+			buildPhases = (
+				8B3E72D6150967D933FA3F41 /* [CP] Check Pods Manifest.lock */,
+				ADF57F5F25DB5E2900E27BAE /* Sources */,
+				ADF57F6025DB5E2900E27BAE /* Frameworks */,
+				ADF57F6125DB5E2900E27BAE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExportAPIKit;
+			packageProductDependencies = (
+				ADF57F9F25DB6E3200E27BAE /* APIKit */,
+			);
+			productName = ExportAPIKit;
+			productReference = ADF57F6325DB5E2900E27BAE /* libExportAPIKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +244,7 @@
 		AD2ADDA325B167610066D74B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					AD2ADDAB25B167610066D74B = {
@@ -201,6 +253,9 @@
 					};
 					AD2ADDDF25B1720C0066D74B = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					ADF57F6225DB5E2900E27BAE = {
+						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
@@ -214,7 +269,7 @@
 			);
 			mainGroup = AD2ADDA225B167610066D74B;
 			packageReferences = (
-				ADBBEA4B25BED3AA00A009C9 /* XCRemoteSwiftPackageReference "APIKit" */,
+				ADF57F9E25DB6E3200E27BAE /* XCRemoteSwiftPackageReference "APIKit" */,
 			);
 			productRefGroup = AD2ADDAD25B167610066D74B /* Products */;
 			projectDirPath = "";
@@ -222,6 +277,7 @@
 			targets = (
 				AD2ADDAB25B167610066D74B /* Umbrella */,
 				AD2ADDDF25B1720C0066D74B /* DataStore */,
+				ADF57F6225DB5E2900E27BAE /* ExportAPIKit */,
 			);
 		};
 /* End PBXProject section */
@@ -237,6 +293,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8B3E72D6150967D933FA3F41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExportAPIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AD2ADDD825B16CE80066D74B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,12 +348,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADF57F2525DB58F800E27BAE /* Data.swift in Sources */,
 				AD2ADE0325B1727B0066D74B /* UserDefaultsRepository.swift in Sources */,
 				AD2ADDF925B172550066D74B /* UserDefaultsKeys.swift in Sources */,
 				AD2ADDEC25B1723E0066D74B /* UserDefaultsDataStore.swift in Sources */,
 				AD2ADDFE25B1726F0066D74B /* UserDefaultsPropertyWrapper.swift in Sources */,
 				AD2ADE0825B1728A0066D74B /* UserDefaultsRepositoryProtocol.swift in Sources */,
 				AD2ADDF425B172480066D74B /* UserDefaultsDataStoreProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF57F5F25DB5E2900E27BAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF57F6625DB5E2900E27BAE /* ExportAPIKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +575,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -505,7 +592,41 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADF57F6825DB5E2900E27BAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D7489DM9Z;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADF57F6925DB5E2900E27BAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D7489DM9Z;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -543,10 +664,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		ADF57F6725DB5E2900E27BAE /* Build configuration list for PBXNativeTarget "ExportAPIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF57F6825DB5E2900E27BAE /* Debug */,
+				ADF57F6925DB5E2900E27BAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ADBBEA4B25BED3AA00A009C9 /* XCRemoteSwiftPackageReference "APIKit" */ = {
+		ADF57F9E25DB6E3200E27BAE /* XCRemoteSwiftPackageReference "APIKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:ishkawa/APIKit.git";
 			requirement = {
@@ -557,9 +687,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ADBBEA4C25BED3AA00A009C9 /* APIKit */ = {
+		ADF57F9F25DB6E3200E27BAE /* APIKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ADBBEA4B25BED3AA00A009C9 /* XCRemoteSwiftPackageReference "APIKit" */;
+			package = ADF57F9E25DB6E3200E27BAE /* XCRemoteSwiftPackageReference "APIKit" */;
+			productName = APIKit;
+		};
+		ADF57FA425DB6E4600E27BAE /* APIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADF57F9E25DB6E3200E27BAE /* XCRemoteSwiftPackageReference "APIKit" */;
+			productName = APIKit;
+		};
+		ADF57FA625DB6E4E00E27BAE /* APIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADF57F9E25DB6E3200E27BAE /* XCRemoteSwiftPackageReference "APIKit" */;
 			productName = APIKit;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -7,9 +7,9 @@
 
 import Foundation
 
-@_exported import RxSwift
-@_exported import DataStore
 @_exported import APIKit
+@_exported import DataStore
+//@_exported import ExportAPIKit
 
 public class Hoge1 {
     public private(set) var text: String

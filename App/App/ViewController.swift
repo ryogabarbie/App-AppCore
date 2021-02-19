@@ -30,6 +30,7 @@ class ViewController: UIViewController {
             })
             .dispose()
 
+        print(DataClass())
         print(APIKit.Session.self)
 
         Feature1.hoge()
